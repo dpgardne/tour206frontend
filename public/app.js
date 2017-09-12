@@ -28,7 +28,7 @@ app.controller('mainController', ['$http', '$scope', '$filter', function($http, 
   $scope.updatingShow   = {};
 
   // declare variables
-  this.url         = 'https://backend1111.herokuapp.com'; 
+  this.url         = 'https://backend1111.herokuapp.com';
   const self       = this;
   this.loggedIn    = false;
   this.formdata    = '';
@@ -74,7 +74,7 @@ app.controller('mainController', ['$http', '$scope', '$filter', function($http, 
     console.log( $scope.currentEvent.start.local);
     // show.description
     console.log( $scope.currentEvent.description.text);
-    console.log(typeof self.user.id);
+    // console.log(typeof self.user.id);
     // POST REQUEST
     $http({
       method: 'POST',
