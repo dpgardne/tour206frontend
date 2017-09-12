@@ -83,7 +83,7 @@ app.controller('mainController', ['$http', '$scope', '$filter', function($http, 
         name: $scope.currentEvent.name.text,
         start: $scope.currentEvent.start.local,
         description: $scope.currentEvent.description.text,
-        user_id: $scope.user.id
+        user_id: $scope.self.user.id
       }},
     }).then(response=>{
       console.log(response.data);
